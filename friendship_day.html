@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friendship Day</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @font-face {
+            font-family: Allura;
+            src: url('Allura-Regular.otf');
+        }
+        #post_name {
+            font-weight: bold;
+            text-align: center;
+            animation: glowing 2s ease-in-out infinite;
+            color: transparent;
+            background-image: linear-gradient(80deg, rgb(248, 46, 80), rgb(30, 255, 0), rgb(0, 110, 255));
+            /* background-image: radial-gradient(rgb(255, 0, 140), rgb(0, 255, 0), blue); */
+            background-size: 400% 400%;
+            background-clip: text;
+            -webkit-background-clip: text;
+        }
+        @keyframes glowing {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="head">
+        <script src="friend.js"></script>
+        <h1>H͓̽a͓̽p͓̽p͓̽y͓̽ ͓̽F͓̽r͓̽i͓̽e͓̽n͓̽d͓̽s͓̽h͓̽i͓̽p͓̽</h1>
+        <h1>͓̽D͓̽a͓̽y͓̽ 🤩😀😍😃</h1>
+        <h2 id="post_name" style="font-family: 'Allura';font-size: 100px;"></h2>
+    </div>
+</body>
+</html>
